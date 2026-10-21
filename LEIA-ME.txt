@@ -1,0 +1,23 @@
+LOUVORES ICNV — VERSÃO PWA PARA iPHONE (iOS)
+
+CONTEÚDO
+- index.html: aplicativo baseado no HTML atualizado
+- manifest.webmanifest: metadados para instalação
+- service-worker.js: cache para funcionamento offline depois da primeira visita
+- icons/: ícones para a tela inicial
+
+IMPORTANTE
+Um PWA não pode ser instalado no iPhone abrindo o HTML diretamente pelo app Arquivos. Para instalação na tela inicial e funcionamento offline, publique esta pasta em um endereço HTTPS. O GitHub Pages oferece hospedagem HTTPS gratuita para repositórios públicos.
+
+PASSOS NO IPHONE
+1. Publique TODOS os arquivos e pastas deste pacote em um site HTTPS (por exemplo, GitHub Pages).
+2. No iPhone, abra o endereço publicado no Safari.
+3. Aguarde carregar completamente uma vez, com internet, para o service worker guardar os arquivos.
+4. Toque em Compartilhar > Adicionar à Tela de Início.
+5. Abra pelo ícone da tela inicial. Depois da primeira carga, a estrutura do app poderá abrir sem internet.
+
+NOTAS SOBRE DADOS
+- O armazenamento local é próprio daquele navegador/origem e dispositivo. Não limpe os dados do site se quiser preservar seus cadastros.
+- Cadastros e alterações não são sincronizados automaticamente entre dispositivos. Faça cópias/backup quando houver função disponível no app.
+- Esta versão foi empacotada, mas não foi testada em um iPhone real; confirme instalação, cache offline e salvamento após publicar.
+- O service worker atualiza o cache quando o nome da versão é alterado. Para atualizar o cache no futuro, mude CACHE_NAME no service-worker.js.
