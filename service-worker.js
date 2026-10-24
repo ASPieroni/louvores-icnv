@@ -1,6 +1,6 @@
 from pathlib import Path
 
-content = """const CACHE_NAME = 'louvores-icnv-pwa-v2';
+content = """const CACHE_NAME = 'louvores-icnv';
 const APP_SHELL = [
   './',
   './index.html',
