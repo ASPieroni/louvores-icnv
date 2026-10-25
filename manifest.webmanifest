@@ -1,7 +1,7 @@
 {
   "id": "./",
-  "name": "louvores-icnv",
-  "short_name": "LOUVORES-ICNV",
+  "name": "LOUVORES-ICNV",
+  "short_name": "louv-icnv",
   "description": "Coletânea de louvores com letras, cifras e transposição, para uso offline.",
   "lang": "pt-BR",
   "start_url": "./index.html",
