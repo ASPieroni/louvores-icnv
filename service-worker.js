@@ -1,6 +1,6 @@
 from pathlib import Path
 
-content = """const CACHE_NAME = 'louvores-icnv';
+content = """const CACHE_NAME = 'LOUVORES-ICNV';
 const APP_SHELL = [
   './',
   './index.html',
@@ -23,7 +23,7 @@ self.addEventListener('activate', event => {
     caches.keys()
       .then(keys => Promise.all(
         keys
-          .filter(key => key.startsWith('louvores-icnv-pwa-') && key !== CACHE_NAME)
+          .filter(key => key.startsWith('LOUVORES-ICNV') && key !== CACHE_NAME)
           .map(key => caches.delete(key))
       ))
       .then(() => self.clients.claim())
